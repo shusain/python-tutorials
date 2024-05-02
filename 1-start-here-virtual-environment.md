@@ -17,7 +17,10 @@ Before diving into Python programming, it's crucial to understand and set up a v
 1. **Open Command Prompt:** Search for `cmd` in the Start menu and open it.
 2. **Install virtualenv (if not installed):**
    ```bash
-   pip install virtualenv
+   # Replace the py version with the appropriate one you installed, use:
+   # py --list
+   # to show them all
+   py -3.11 pip install virtualenv
    ```
 3. **Create a Virtual Environment:**
    Navigate to your project directory:
@@ -26,13 +29,15 @@ Before diving into Python programming, it's crucial to understand and set up a v
    ```
    Create a virtual environment named 'venv':
    ```bash
-   virtualenv venv
+   py -3.11 -m virtualenv venv
    ```
 4. **Activate the Virtual Environment:**
    ```bash
    .\venv\Scripts\activate
    ```
-   
+
+Once Activate you can use `python --version` to verify the interpreter is the version you selected and use `pip install` to install things into the .venv/site-packages without modifying the global packages.
+
 ### Linux/macOS
 
 1. **Open Terminal:** Use Spotlight search for macOS or your application menu for Linux.
